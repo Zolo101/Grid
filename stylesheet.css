@@ -3,7 +3,6 @@
     height: 100px;
     margin: 0 auto;
     margin-top: 0;
-    display: inline-block;
     float: left;
     font-size: 15px;
     font-family: sans-serif;
@@ -21,7 +20,6 @@ h4 { text-align: center; }
 #grid { width: 320px; } /*for extra space between the grid and the upgrades*/
 #grid { height: 400px; float: left; }
 #upgrades-container { width: 300px; height: 400px; overflow-y: auto; outline: grey ridge 4px; }
-#info { }
 .upgradeid { outline-style: double; outline-width: 3px; padding: 2px; margin-bottom: 20px; }
 
 #energy, #steel { font-family: monospace; }
