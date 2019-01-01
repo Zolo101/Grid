@@ -31,7 +31,7 @@ var steel = {
 	shown: false
 } // side resource
 
-var grid = ["white","white","white","white","white5","white","white","white","white"];
+var grid = ["white","white","white","white","white","white","white","white","white"];
 
 var lol = 1;
 var lol2 = 0;
