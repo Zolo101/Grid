@@ -84,7 +84,4 @@ function gridtick() {
 		energy.persec = e;
 		steel.persec = s;
 	}
-	console.log(e);
-	console.log(multi);
-	console.log(gmulti);
 }
