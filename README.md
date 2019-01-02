@@ -1,3 +1,3 @@
 # Grid
 
-Cool kid incremental game
+Cool kid incremental game.

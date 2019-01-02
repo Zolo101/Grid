@@ -1,7 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function() {
 	makeGrid();
 	setupUpgrades();
-
 	var energytext = document.createElement("p");
 	energytext.id = "energy";
 	energytext.innerHTML = "Energy: " + energy.count;
@@ -13,10 +12,16 @@ $(document).ready(function () {
 	document.getElementById("inventory").appendChild(steeltext);
 
 	//for selectbox
-	var selectbox = document.createElement("p");
-	selectbox.id = "selectboxname";
-	//$("selectboxname").hide();
-	document.getElementById("selectbox").appendChild(selectbox);
+	var selectboxinfo = document.createElement("p");
+	selectboxinfo.id = "selectboxname";
+	document.getElementById("selectbox").appendChild(selectboxinfo);
+
+	var selectboxreset = document.createElement("button");
+	selectboxreset.id = "selectboxreset";
+	selectboxreset.innerHTML = "Reset Grid";
+	selectboxreset.onclick = function(){resetGrid();};
+	document.getElementById("selectboxinfo").appendChild(selectboxreset);
+
 });
 
 var energy = {
@@ -56,6 +61,7 @@ function showResource(resource, show) {
 }
 
 function tick() {
+	gridtick();
 	energy.count += energy.persec;
 	steel.count += steel.persec;
 	document.getElementById("energy").innerHTML = "Energy: " + energy.count;
@@ -77,7 +83,7 @@ function createButton(num) {
 	number.id = "numtext";
 	number.innerHTML = num;
 	document.getElementById(num).appendChild(number);
-	number.onclick = function(){selectBox(Number(number.parentElement.id), number.parentElement.id)};
+	number.onclick = function(){selectBox(Number(number.parentElement.id))};
 }
 
 function makeGrid() {

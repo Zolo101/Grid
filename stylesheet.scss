@@ -1,0 +1,49 @@
+.box {
+	width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 0;
+    float: left;
+    font-size: 15px;
+    font-family: sans-serif;
+    outline-style: solid;
+    outline-width: 1px;
+	background: #f6f8f9;
+}
+
+p, button { padding-left: 5px; }
+
+p,h4 { font-family: sans-serif; }
+
+h4 { text-align: center; }
+
+#grid { width: 320px; height: 400px; float: left } /*for extra space between the grid and the upgrades*/
+#upgrades-container { width: 300px; height: 400px; overflow-y: auto; outline: grey ridge 4px; }
+.upgradeid { outline-style: double; outline-width: 3px; padding: 2px; margin-bottom: 20px; }
+
+#selectboxinfo {
+    outline: black solid 1px;
+    width: 620px; 
+    min-height: 80px;
+    max-height: 400px;
+    background: rgb(255,255,255); background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(237,242,252,1) 100%);
+}
+#selectboxtext {
+    padding: 4px;
+    margin: 4px;
+    float: left; 
+    padding: 4px;
+    font-family: monospace;
+}
+
+#selectboxcancel {font-family: monospace; margin: 5px; padding: 5px;}
+
+#energy, #steel { font-family: monospace; }
+#energy { color: blue; }
+#steel { color: grey; }
+
+#gridrow {
+    display: block;
+    float:left;
+	width:100%;
+}
